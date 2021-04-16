@@ -9,6 +9,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 # Web url examples
 
 http://localhost:4200/get-started
+
 http://localhost:4200/
+
 http://localhost:4200/tv-shows/:id
+
 http://localhost:4200/movies/:id
