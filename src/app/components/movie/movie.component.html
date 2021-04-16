@@ -1,0 +1,33 @@
+<section class="header-container">
+    <div class="header-info-container">
+        <h1 class="info-title">{{ movie.title }}</h1>
+        <div class="info-metadata">
+            <span class="info-metadata-item">{{ movie.release_date }}</span>
+            <span class="info-metadata-divider">|</span>
+            <span class="info-metadata-item">{{ movie.status }}</span>
+            <span class="info-metadata-divider">|</span>
+            <span class="info-metadata-item">{{ movie.runtime }} min</span>
+            <span class="info-metadata-divider">|</span>
+            <span class="info-metadata-item">{{ movie.vote_average }} / 10</span>
+        </div>
+        <div class="info-synopsis">{{ movie.overview }}</div>
+        <div class="info-cast">
+            <span class="info-cast-label">With: </span>
+            <span class="info-cast-item" *ngFor="let cast of credits.cast | slice:0:5">{{ cast.name }}, </span>
+        </div>
+    </div>
+    <div class="header-img-container" style='background-image: url("https://image.tmdb.org/t/p/original/{{ movie.backdrop_path }}");'>
+        <div class="header-img"></div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-header-text">Recommendations</h2>
+    </div>
+    <div class="link-container">
+        <a class="title-link" *ngFor="let recommendedMovie of recommendations" href="movies/{{ recommendedMovie.id }}" title="{{ recommendedMovie.title }}">
+            <img class="title-link-img" src="https://image.tmdb.org/t/p/w500/{{ recommendedMovie.backdrop_path }}" alt="">
+        </a>
+    </div>
+</section>

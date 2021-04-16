@@ -1,0 +1,71 @@
+@import url(../movie/movie.component.css);
+
+
+
+.season {
+    display: none;
+}
+
+.season > * {
+    padding-bottom: 16px;
+}
+
+.season-selector {
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #fff;
+    background: var(--background-color);
+    padding: 7px 30px 7px 0;
+    outline-offset: 3px;
+}
+
+.season.season-active {
+    display: block;
+}
+
+.season-metadata .season-release-year {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+    font-weight: 600;
+}
+
+.season-metadata .season-synopsis {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #a3a3a3;
+    margin: 5px 0 20px;
+}
+
+.episodes-container {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+.episode {
+    max-width: 100%;
+    margin: 6px;
+}
+
+.episode-thumbnail {
+    width: 100%;
+}
+
+.episode-title {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.episode-synopsis {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #a3a3a3;
+}

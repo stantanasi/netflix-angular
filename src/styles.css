@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+	--accent-color: #e50914;
+	--dark-color: #141414;
+	--light-color: #f4f4f4;
+    --background-color: #181818;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background: #f3f3f3;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: var(--background-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #fff;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+.btn {
+	display: inline-block;
+	background: var(--accent-color);
+	color: #fff;
+	padding: 0.5rem 1.3rem;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	transition: opacity 0.2s ease-in;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 2px;
+}
+
+.btn-xl {
+	font-size: 2rem;
+	padding: 1.5rem 2.1rem;
+	text-transform: uppercase;
+}
+
+.btn-icon {
+	margin-left: 1rem;
+}
+
+.btn-rounded {
+	border-radius: 5px;
+	background-color: var(--accent-color);
+}
+
+.btn-rect{
+	background-color: var(--accent-color);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

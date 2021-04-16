@@ -1,0 +1,39 @@
+.netflix-logo {
+    width: 110px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    padding: 12px;
+    z-index: 100;
+    top: 0;
+    position: fixed;
+    background-color: var(--background-color);
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 64px;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-item {
+    margin-right: 32px;
+    align-self: center;
+    font-size: 18px;
+}
+
+.navbar-get-started {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-right-item {
+    margin-right: 24px;
+}

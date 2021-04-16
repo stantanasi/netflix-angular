@@ -1,0 +1,85 @@
+.header-container {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.header-info-container {
+    position: absolute;
+    justify-content: center;
+    width: 45%;
+    padding: 64px;
+}
+
+.header-info-container > * {
+    margin: 20px;
+}
+
+.info-title {
+    font-size: 35px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #fff
+}
+
+.info-synopsis {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 100%;
+}
+
+.header-img-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0.25turn, #181818, #18181888, #18181800),
+    linear-gradient(#181818, #18181800, #18181800, #18181800, #181818);
+}
+
+.collection {
+    position: relative;
+    top: -30px;
+    padding: 0 35px;
+    padding-bottom: 25px;
+}
+
+.collection-name {
+    padding-bottom: 14px;
+    font-size: 22px;
+}
+
+.horizontal-row {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+.horizontal-row-item {
+    margin-right: 12px;
+}
+
+.horizontal-row-item .tv-show-img {
+    width: auto;
+    height: 200px;
+}
+
+.horizontal-row-item .movie-img {
+    width: auto;
+    height: 160px;
+}
+
+.row-item-title {
+    font-size: 15px;
+}

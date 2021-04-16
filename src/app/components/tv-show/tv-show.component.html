@@ -1,0 +1,60 @@
+<section class="header-container">
+    <div class="header-info-container">
+        <h1 class="info-title">{{ tvShow.name }}</h1>
+        <div class="info-metadata">
+            <span class="info-metadata-item">{{ tvShow.first_air_date }}</span>
+            <span class="info-metadata-divider">|</span>
+            <span class="info-metadata-item">{{ tvShow.status }}</span>
+            <span class="info-metadata-divider">|</span>
+            <span class="info-metadata-item">{{ tvShow.number_of_seasons }} seasons</span>
+            <span class="info-metadata-divider">|</span>
+            <span class="info-metadata-item">{{ tvShow.vote_average }} / 10</span>
+        </div>
+        <div class="info-synopsis">{{ tvShow.overview }}</div>
+        <div class="info-cast">
+            <span class="info-cast-label">With: </span>
+            <span class="info-cast-item" *ngFor="let cast of credits.cast | slice:0:5">{{ cast.name }}, </span>
+        </div>
+    </div>
+    <div class="header-img-container" style='background-image: url("https://image.tmdb.org/t/p/original/{{ tvShow.backdrop_path }}");'>
+        <div class="header-img"></div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-header-text">Episodes</h2>
+        <h2 class="section-subheader-text">{{ tvShow.name }}</h2>
+    </div>
+    <div class="season-selector-container">
+        <select class="season-selector" (change)="selectChangeHandler($event)">
+            <option *ngFor="let season of seasons" [value]="season.season_number" [selected]="season.season_number == showSeason">Season {{ season.season_number }}</option>
+        </select>
+    </div>
+    <div class="seasons-container">
+        <div class="season" [ngClass]="{'season-active': season.season_number == showSeason }" *ngFor="let season of seasons; let f = first">
+            <div class="season-metadata">
+                <span class="season-release">Release: {{ season.air_date }}</span>
+                <p class="season-synopsis">{{ season.overview }}</p>
+            </div>
+            <div class="episodes-container">
+                <div class="episode" *ngFor="let episode of season.episodes">
+                    <img class="episode-thumbnail" src="https://image.tmdb.org/t/p/w500/{{ episode.still_path }}" alt="">
+                    <h3 class="episode-title">{{ episode.episode_number }}. {{ episode.name }}</h3>
+                    <p class="episode-synopsis">{{ episode.overview }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-header-text">Recommendations</h2>
+    </div>
+    <div class="link-container">
+        <a class="title-link" *ngFor="let recommendedTvShow of recommendations" href="tv-shows/{{ recommendedTvShow.id }}" title="{{ recommendedTvShow.name }}">
+            <img class="title-link-img" src="https://image.tmdb.org/t/p/w500/{{ recommendedTvShow.backdrop_path }}" alt="">
+        </a>
+    </div>
+</section>
