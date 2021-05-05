@@ -9,7 +9,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { TvShowComponent } from './components/tv-show/tv-show.component';
-import { GetStartedComponent } from './components/get-started/get-started.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 
@@ -20,8 +19,7 @@ import {MatIconModule} from '@angular/material/icon';
     FooterComponent,
     HomeComponent,
     MovieComponent,
-    TvShowComponent,
-    GetStartedComponent
+    TvShowComponent
   ],
   imports: [
     BrowserModule,
