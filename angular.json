@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "netflix-angu": {
+    "netflix-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/netflix-angu",
+            "outputPath": "dist/netflix-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -90,18 +90,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "netflix-angu:build"
+            "browserTarget": "netflix-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "netflix-angu:build:production"
+              "browserTarget": "netflix-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "netflix-angu:build"
+            "browserTarget": "netflix-angular:build"
           }
         },
         "test": {
@@ -139,11 +139,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "netflix-angu:serve"
+            "devServerTarget": "netflix-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "netflix-angu:serve:production"
+              "devServerTarget": "netflix-angular:serve:production"
             }
           }
         }

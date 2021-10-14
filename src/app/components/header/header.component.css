@@ -26,6 +26,7 @@
     margin-right: 32px;
     align-self: center;
     font-size: 18px;
+    text-align: center;
 }
 
 .navbar-get-started {
@@ -36,4 +37,13 @@
 
 .navbar-right-item {
     margin-right: 24px;
+}
+
+.mat-icon {
+    vertical-align: middle;
+}
+
+.navbar-profile-pic {
+    width: 60px;
+    height: 60px;
 }

@@ -1,0 +1,39 @@
+# This workflow to automatically build and deploy to GitHub Pages (deployment branch)
+# when code is pushed to the dev branch
+name: Build and Deploy
+
+# Controls when the action will run. 
+on:
+  push:
+    branches:
+      - main
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build-and-deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      #This is required if public is in .gitignore, which it likely is
+      - name: Create build folder output
+        run: mkdir -p dist/netflix-angular
+
+      # Install packages and build project
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build:prod
+
+      # Deploy to master
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: deployment # The branch the action should deploy to.
+          folder: dist/netflix-angular # The folder the action should deploy.
