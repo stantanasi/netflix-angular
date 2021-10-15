@@ -90,71 +90,71 @@ HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TheMovieDbService", function() { return TheMovieDbService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ "AytR");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+
 
 
 class TheMovieDbService {
     constructor(http) {
         this.http = http;
         this.apiUrl = 'https://api.themoviedb.org/3';
-        this.apiKey = '966bc16006cd2667daf628d997d83afb';
-        this.apiToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NjZiYzE2MDA2Y2QyNjY3ZGFmNjI4ZDk5N2Q4M2FmYiIsInN1YiI6IjYwMTQzNTRjYzhhMmQ0MDAzZmY0YzY4NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CmCAd4C8AYcAkx-YOTEVrSOghbkOPmIXKD1TwotFiSQ';
     }
     //
     // Movie
     //
     getMovie(id) {
-        return this.http.get(`${this.apiUrl}/movie/${id}?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/movie/${id}?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getMovieCredits(id) {
-        return this.http.get(`${this.apiUrl}/movie/${id}/credits?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/movie/${id}/credits?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getMoviesRecommendations(id) {
-        return this.http.get(`${this.apiUrl}/movie/${id}/recommendations?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/movie/${id}/recommendations?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     //
     // Movies
     //
     getPopularMovies() {
-        return this.http.get(`${this.apiUrl}/movie/popular?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/movie/popular?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getTopRatedMovies() {
-        return this.http.get(`${this.apiUrl}/movie/top_rated?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/movie/top_rated?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getUpcomingMovies() {
-        return this.http.get(`${this.apiUrl}/movie/upcoming?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/movie/upcoming?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     //
     // TV Show
     //
     getTvShow(id) {
-        return this.http.get(`${this.apiUrl}/tv/${id}?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/tv/${id}?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getTvShowCredits(id) {
-        return this.http.get(`${this.apiUrl}/tv/${id}/credits?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/tv/${id}/credits?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getTvShowSeason(id, season_number) {
-        return this.http.get(`${this.apiUrl}/tv/${id}/season/${season_number}?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/tv/${id}/season/${season_number}?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getTvShowsRecommendations(id) {
-        return this.http.get(`${this.apiUrl}/tv/${id}/recommendations?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/tv/${id}/recommendations?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     //
     // TV Shows
     //
     getPopularTvShows() {
-        return this.http.get(`${this.apiUrl}/tv/popular?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/tv/popular?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getTopRatedTvShows() {
-        return this.http.get(`${this.apiUrl}/tv/top_rated?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/tv/top_rated?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
     getOnAirTvShows() {
-        return this.http.get(`${this.apiUrl}/tv/on_the_air?api_key=${this.apiKey}`);
+        return this.http.get(`${this.apiUrl}/tv/on_the_air?api_key=${src_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiKey}`);
     }
 }
-TheMovieDbService.ɵfac = function TheMovieDbService_Factory(t) { return new (t || TheMovieDbService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
-TheMovieDbService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: TheMovieDbService, factory: TheMovieDbService.ɵfac, providedIn: 'root' });
+TheMovieDbService.ɵfac = function TheMovieDbService_Factory(t) { return new (t || TheMovieDbService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"])); };
+TheMovieDbService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: TheMovieDbService, factory: TheMovieDbService.ɵfac, providedIn: 'root' });
 
 
 /***/ }),
@@ -173,7 +173,9 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 const environment = {
-    production: false
+    production: false,
+    apiKey: '966bc16006cd2667daf628d997d83afb',
+    apiToken: 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NjZiYzE2MDA2Y2QyNjY3ZGFmNjI4ZDk5N2Q4M2FmYiIsInN1YiI6IjYwMTQzNTRjYzhhMmQ0MDAzZmY0YzY4NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CmCAd4C8AYcAkx-YOTEVrSOghbkOPmIXKD1TwotFiSQ',
 };
 /*
  * For easier debugging in development mode, you can import the following file
