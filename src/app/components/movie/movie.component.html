@@ -26,7 +26,7 @@
         <h2 class="section-header-text">Recommendations</h2>
     </div>
     <div class="link-container">
-        <a class="title-link" *ngFor="let recommendedMovie of recommendations" href="movies/{{ recommendedMovie.id }}" title="{{ recommendedMovie.title }}">
+        <a class="title-link" *ngFor="let recommendedMovie of recommendations" routerLink="/movies/{{ recommendedMovie.id }}" title="{{ recommendedMovie.title }}">
             <img class="title-link-img" src="https://image.tmdb.org/t/p/w500/{{ recommendedMovie.backdrop_path }}" alt="">
         </a>
     </div>

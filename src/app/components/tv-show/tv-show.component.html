@@ -53,7 +53,7 @@
         <h2 class="section-header-text">Recommendations</h2>
     </div>
     <div class="link-container">
-        <a class="title-link" *ngFor="let recommendedTvShow of recommendations" href="tv-shows/{{ recommendedTvShow.id }}" title="{{ recommendedTvShow.name }}">
+        <a class="title-link" *ngFor="let recommendedTvShow of recommendations" routerLink="/tv-shows/{{ recommendedTvShow.id }}" title="{{ recommendedTvShow.name }}">
             <img class="title-link-img" src="https://image.tmdb.org/t/p/w500/{{ recommendedTvShow.backdrop_path }}" alt="">
         </a>
     </div>

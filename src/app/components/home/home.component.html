@@ -2,7 +2,7 @@
     <div class="header-info-container">
         <h1 class="info-title">{{ popularTvShows[0].name }}</h1>
         <div class="info-synopsis">{{ popularTvShows[0].overview }}</div>
-        <div><a class="btn btn-rect" routerLink="tv-shows/{{ popularTvShows[0].id }}">WATCH NOW</a></div>
+        <div><a class="btn btn-rect" routerLink="/tv-shows/{{ popularTvShows[0].id }}">WATCH NOW</a></div>
     </div>
     <div class="header-img-container" style='background-image: url("https://image.tmdb.org/t/p/original/{{ popularTvShows[0].backdrop_path }}");'>
         <div class="header-img"></div>
@@ -13,7 +13,7 @@
     <h3 class="collection-name">Popular tv-shows</h3>
     <ul class="horizontal-row">
         <li *ngFor="let tvShow of popularTvShows" class="horizontal-row-item">
-            <a routerLink="tv-shows/{{ tvShow.id }}">
+            <a routerLink="/tv-shows/{{ tvShow.id }}">
                 <img class="tv-show-img" src="https://image.tmdb.org/t/p/original/{{ tvShow.poster_path }}" alt="{{ tvShow.name }}">
                 <span class="row-item-title">{{ tvShow.name }}</span>
             </a>
@@ -25,7 +25,7 @@
     <h3 class="collection-name">Popular movies</h3>
     <ul class="horizontal-row">
         <li *ngFor="let movie of popularMovies" class="horizontal-row-item">
-            <a routerLink="movies/{{ movie.id }}">
+            <a routerLink="/movies/{{ movie.id }}">
                 <img class="movie-img" src="https://image.tmdb.org/t/p/original/{{ movie.backdrop_path }}" alt="{{ movie.title }}">
                 <span class="row-item-title">{{ movie.title }}</span>
             </a>
@@ -37,7 +37,7 @@
     <h3 class="collection-name">TV On The Air</h3>
     <ul class="horizontal-row">
         <li *ngFor="let tvShow of onAirTvShows" class="horizontal-row-item">
-            <a routerLink="tv-shows/{{ tvShow.id }}">
+            <a routerLink="/tv-shows/{{ tvShow.id }}">
                 <img class="tv-show-img" src="https://image.tmdb.org/t/p/original/{{ tvShow.poster_path }}" alt="{{ tvShow.name }}">
                 <span class="row-item-title">{{ tvShow.name }}</span>
             </a>
@@ -49,7 +49,7 @@
     <h3 class="collection-name">Top rated tv-shows</h3>
     <ul class="horizontal-row">
         <li *ngFor="let tvShow of topRatedTvShows" class="horizontal-row-item">
-            <a routerLink="tv-shows/{{ tvShow.id }}">
+            <a routerLink="/tv-shows/{{ tvShow.id }}">
                 <img class="tv-show-img" src="https://image.tmdb.org/t/p/original/{{ tvShow.poster_path }}" alt="{{ tvShow.name }}">
                 <span class="row-item-title">{{ tvShow.name }}</span>
             </a>
@@ -61,7 +61,7 @@
     <h3 class="collection-name">Top rated movies</h3>
     <ul class="horizontal-row">
         <li *ngFor="let movie of topRatedMovies" class="horizontal-row-item">
-            <a routerLink="movies/{{ movie.id }}">
+            <a routerLink="/movies/{{ movie.id }}">
                 <img class="movie-img" src="https://image.tmdb.org/t/p/original/{{ movie.backdrop_path }}" alt="{{ movie.title }}">
                 <span class="row-item-title">{{ movie.title }}</span>
             </a>
@@ -73,7 +73,7 @@
     <h3 class="collection-name">Upcoming movies</h3>
     <ul class="horizontal-row">
         <li *ngFor="let movie of upcomingMovies" class="horizontal-row-item">
-            <a routerLink="movies/{{ movie.id }}">
+            <a routerLink="/movies/{{ movie.id }}">
                 <img class="movie-img" src="https://image.tmdb.org/t/p/original/{{ movie.backdrop_path }}" alt="{{ movie.title }}">
                 <span class="row-item-title">{{ movie.title }}</span>
             </a>
