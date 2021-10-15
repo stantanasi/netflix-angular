@@ -61,7 +61,7 @@ export class TheMovieDbService {
     return this.http.get<Credits>(`${this.apiUrl}/tv/${id}/credits?api_key=${environment.apiKey}`);
   }
 
-  getTvShowSeason(id: string, season_number: string): Observable<Season> {
+  getTvShowSeason(id: string, season_number: number): Observable<Season> {
     return this.http.get<Season>(`${this.apiUrl}/tv/${id}/season/${season_number}?api_key=${environment.apiKey}`);
   }
   

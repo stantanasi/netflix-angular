@@ -17,17 +17,21 @@ export class MovieComponent implements OnInit {
   recommendations: Movie[] = [];
 
   constructor(
-    private route: ActivatedRoute, 
+    private route: ActivatedRoute,
     private theMovieDbService: TheMovieDbService
   ) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
+    this.route.params.subscribe(params => {
 
-    if (id != null) {
-      this.theMovieDbService.getMovie(id).subscribe(movie => this.movie = movie);
-      this.theMovieDbService.getMovieCredits(id).subscribe(credits => this.credits = credits);
-      this.theMovieDbService.getMoviesRecommendations(id).subscribe(recommendations => this.recommendations = recommendations.results);
-    }
+      this.theMovieDbService.getMovie(params.id)
+        .subscribe(movie => this.movie = movie);
+
+      this.theMovieDbService.getMovieCredits(params.id)
+        .subscribe(credits => this.credits = credits);
+
+      this.theMovieDbService.getMoviesRecommendations(params.id)
+        .subscribe(recommendations => this.recommendations = recommendations.results);
+    })
   }
 }

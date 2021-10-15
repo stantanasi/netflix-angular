@@ -20,32 +20,34 @@ export class TvShowComponent implements OnInit {
   showSeason: number = 1;
 
   constructor(
-    private route: ActivatedRoute, 
+    private route: ActivatedRoute,
     private theMovieDbService: TheMovieDbService
   ) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
+    this.route.params.subscribe(params => {
 
-    if (id != null) {
-      this.theMovieDbService.getTvShow(id).subscribe(tvShow => {
+      this.theMovieDbService.getTvShow(params.id).subscribe(tvShow => {
         this.tvShow = tvShow;
 
-        if (tvShow.number_of_seasons) {
-          for (let i = 1; i <= tvShow.number_of_seasons; i++) {
-            this.theMovieDbService.getTvShowSeason(id, i.toString()).subscribe(season => {
-              this.seasons.push(season);
-              this.seasons.sort((a, b) => a.season_number - b.season_number);
-            });
-          }
+        this.seasons = [];
+        for (let seasonNumber = 1; seasonNumber <= (tvShow.number_of_seasons ?? 0); seasonNumber++) {
+          this.theMovieDbService.getTvShowSeason(params.id, seasonNumber).subscribe(season => {
+            this.seasons.push(season);
+            this.seasons.sort((a, b) => a.season_number - b.season_number);
+          });
         }
       });
-      this.theMovieDbService.getTvShowCredits(id).subscribe(credits => this.credits = credits);
-      this.theMovieDbService.getTvShowsRecommendations(id).subscribe(recommendations => this.recommendations = recommendations.results);
-    }
+
+      this.theMovieDbService.getTvShowCredits(params.id)
+        .subscribe(credits => this.credits = credits);
+
+      this.theMovieDbService.getTvShowsRecommendations(params.id)
+        .subscribe(recommendations => this.recommendations = recommendations.results);
+    })
   }
 
-  selectChangeHandler (event: any) {
+  selectChangeHandler(event: any) {
     this.showSeason = event.target.value;
   }
 }
