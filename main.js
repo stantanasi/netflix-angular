@@ -34,7 +34,7 @@ class HeaderComponent {
     }
 }
 HeaderComponent.ɵfac = function HeaderComponent_Factory(t) { return new (t || HeaderComponent)(); };
-HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 25, vars: 0, consts: [[1, "navbar"], ["routerLink", "/", 1, "navbar-brand"], ["src", "assets/images/netflix-logo.png", "alt", "", 1, "netflix-logo"], [1, "navbar-menu"], ["routerLink", "/", 1, "navbar-item"], ["routerLink", "/tv-shows", 1, "navbar-item"], ["routerLink", "/movies", 1, "navbar-item"], ["href", "#", 1, "btn", "btn-rect", "navbar-get-started"], ["href", "#", 1, "navbar-right-item"], ["src", "assets/images/profile-pic.jpg", "alt", "avatar", 1, "navbar-profile-pic"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
+HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 24, vars: 0, consts: [[1, "navbar"], ["routerLink", "/", 1, "navbar-brand"], ["src", "assets/images/netflix-logo.png", "alt", "", 1, "netflix-logo"], [1, "navbar-menu"], ["routerLink", "/", 1, "navbar-item"], ["routerLink", "/tv-shows", 1, "navbar-item"], ["routerLink", "/movies", 1, "navbar-item"], ["href", "#", 1, "navbar-right-item"], ["href", "https://github.com/stantanasi"], ["src", "assets/images/profile-pic.jpg", "alt", "avatar", 1, "navbar-profile-pic"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nav", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 1);
@@ -52,30 +52,29 @@ HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Get started");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "search");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "search");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Enfants");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Enfants");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "card_giftcard");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "notifications");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "card_giftcard");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "img", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "notifications");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_2__["MatIcon"]], styles: [".netflix-logo[_ngcontent-%COMP%] {\n    width: 110px;\n    height: auto;\n}\n\n.navbar[_ngcontent-%COMP%] {\n    display: flex;\n    padding: 12px;\n    z-index: 100;\n    top: 0;\n    position: fixed;\n    background-color: var(--background-color);\n    width: 100%;\n    align-items: center;\n}\n\n.navbar-brand[_ngcontent-%COMP%] {\n    margin-right: 64px;\n}\n\n.navbar-menu[_ngcontent-%COMP%] {\n    display: flex;\n}\n\n.navbar-item[_ngcontent-%COMP%] {\n    margin-right: 32px;\n    align-self: center;\n    font-size: 18px;\n    text-align: center;\n}\n\n.navbar-get-started[_ngcontent-%COMP%] {\n    align-self: center;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.navbar-right-item[_ngcontent-%COMP%] {\n    margin-right: 24px;\n}\n\n.mat-icon[_ngcontent-%COMP%] {\n    vertical-align: middle;\n}\n\n.navbar-profile-pic[_ngcontent-%COMP%] {\n    width: 60px;\n    height: 60px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsYUFBYTtJQUNiLFlBQVk7SUFDWixNQUFNO0lBQ04sZUFBZTtJQUNmLHlDQUF5QztJQUN6QyxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCOztBQUVBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEIiLCJmaWxlIjoiaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmV0ZmxpeC1sb2dvIHtcbiAgICB3aWR0aDogMTEwcHg7XG4gICAgaGVpZ2h0OiBhdXRvO1xufVxuXG4ubmF2YmFyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBhZGRpbmc6IDEycHg7XG4gICAgei1pbmRleDogMTAwO1xuICAgIHRvcDogMDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tYmFja2dyb3VuZC1jb2xvcik7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLm5hdmJhci1icmFuZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiA2NHB4O1xufVxuXG4ubmF2YmFyLW1lbnUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG59XG5cbi5uYXZiYXItaXRlbSB7XG4gICAgbWFyZ2luLXJpZ2h0OiAzMnB4O1xuICAgIGFsaWduLXNlbGY6IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4ubmF2YmFyLWdldC1zdGFydGVkIHtcbiAgICBhbGlnbi1zZWxmOiBjZW50ZXI7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxuXG4ubmF2YmFyLXJpZ2h0LWl0ZW0ge1xuICAgIG1hcmdpbi1yaWdodDogMjRweDtcbn1cblxuLm1hdC1pY29uIHtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4ubmF2YmFyLXByb2ZpbGUtcGljIHtcbiAgICB3aWR0aDogNjBweDtcbiAgICBoZWlnaHQ6IDYwcHg7XG59Il19 */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "a", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "img", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_2__["MatIcon"]], styles: [".netflix-logo[_ngcontent-%COMP%] {\n    width: 110px;\n    height: auto;\n}\n\n.navbar[_ngcontent-%COMP%] {\n    display: flex;\n    padding: 12px;\n    z-index: 100;\n    top: 0;\n    position: fixed;\n    background-color: var(--background-color);\n    width: 100%;\n    align-items: center;\n}\n\n.navbar-brand[_ngcontent-%COMP%] {\n    margin-right: 64px;\n}\n\n.navbar-menu[_ngcontent-%COMP%] {\n    display: flex;\n    margin-right: auto;\n}\n\n.navbar-item[_ngcontent-%COMP%] {\n    margin-right: 32px;\n    align-self: center;\n    font-size: 18px;\n    text-align: center;\n}\n\n.navbar-right-item[_ngcontent-%COMP%] {\n    margin-right: 24px;\n}\n\n.mat-icon[_ngcontent-%COMP%] {\n    vertical-align: middle;\n}\n\n.navbar-profile-pic[_ngcontent-%COMP%] {\n    width: 60px;\n    height: 60px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsYUFBYTtJQUNiLFlBQVk7SUFDWixNQUFNO0lBQ04sZUFBZTtJQUNmLHlDQUF5QztJQUN6QyxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0FBQ2hCIiwiZmlsZSI6ImhlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5ldGZsaXgtbG9nbyB7XG4gICAgd2lkdGg6IDExMHB4O1xuICAgIGhlaWdodDogYXV0bztcbn1cblxuLm5hdmJhciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwYWRkaW5nOiAxMnB4O1xuICAgIHotaW5kZXg6IDEwMDtcbiAgICB0b3A6IDA7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWJhY2tncm91bmQtY29sb3IpO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5uYXZiYXItYnJhbmQge1xuICAgIG1hcmdpbi1yaWdodDogNjRweDtcbn1cblxuLm5hdmJhci1tZW51IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbi1yaWdodDogYXV0bztcbn1cblxuLm5hdmJhci1pdGVtIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDMycHg7XG4gICAgYWxpZ24tc2VsZjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5uYXZiYXItcmlnaHQtaXRlbSB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyNHB4O1xufVxuXG4ubWF0LWljb24ge1xuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG5cbi5uYXZiYXItcHJvZmlsZS1waWMge1xuICAgIHdpZHRoOiA2MHB4O1xuICAgIGhlaWdodDogNjBweDtcbn0iXX0= */"] });
 
 
 /***/ }),
