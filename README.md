@@ -5,16 +5,17 @@
 </p>
 
 <p align="center">
-  <a href="https://stantanasi.github.io/netflix-angular">Netflix clone - Live Demo</a>
+  <strong>Site URL / Demo » </strong>
+    <a href="https://stantanasi.github.io/netflix-angular">stantanasi.github.io/netflix-angular</a>
 </p>
 
-![Netflix Angular Preview](./src/assets/images/screenshot.png)
+![Netflix Angular Preview](./src/assets/images/screenshot.gif)
 
 ## Getting started
 
 ### Prerequisites
 
-- Install [Node.js](https://nodejs.org) which includes [Node Package Manager](https://www.npmjs.com/get-npm)
+Install [Node.js](https://nodejs.org) which includes [Node Package Manager](https://www.npmjs.com/get-npm)
 
 
 ### Clone the project to your local machine
