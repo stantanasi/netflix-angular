@@ -9,7 +9,9 @@
     <a href="https://stantanasi.github.io/netflix-angular">stantanasi.github.io/netflix-angular</a>
 </p>
 
-![Netflix Angular Preview](./src/assets/images/screenshot.gif)
+<p align="center">
+  <img src="./src/assets/images/screenshot.gif" alt="Netflix Angular Preview">
+</p>
 
 ## Getting started
 
